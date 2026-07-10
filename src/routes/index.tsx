@@ -587,7 +587,7 @@ function Index() {
                 <img
                   src="/logo.png"
                   alt="BBS TV Productions"
-                  className="max-h-[75%] max-w-[75%] object-contain"
+                  className="max-h-[100%] max-w-[75%] object-contain"
                 />
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between font-mono-x text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
                   <span>■ ■ ■</span><span>On Air</span>
