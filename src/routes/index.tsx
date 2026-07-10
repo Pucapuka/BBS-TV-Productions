@@ -78,7 +78,7 @@ const CONTENT: Record<Lang, {
     partners: {
       eyebrow: "Expediente",
       heading: "Parcerias",
-      note: "Com Dom Bosco BBS e Skill Idiomas.",
+      note: "Com Complexo Educacional Dom Bosco Imperatriz e Skill Idiomas.",
     },
     closer: "Temos orgulho do povo local e levamos sua marca junto com a nossa trajetória de qualidade e autenticidade.",
     footer: {
@@ -130,7 +130,7 @@ const CONTENT: Record<Lang, {
     partners: {
       eyebrow: "Colophon",
       heading: "Partnerships",
-      note: "With Dom Bosco BBS and Skill Idiomas.",
+      note: "With Complexo Educacional Dom Bosco Imperatriz and Skill Idiomas.",
     },
     closer: "We are proud of the local people and carry your brand forward with our trajectory of quality and authenticity.",
     footer: {
@@ -182,7 +182,7 @@ const CONTENT: Record<Lang, {
     partners: {
       eyebrow: "Créditos",
       heading: "Alianzas",
-      note: "Con Dom Bosco BBS y Skill Idiomas.",
+      note: "Con Complexo Educacional Dom Bosco Imperatriz y Skill Idiomas.",
     },
     closer: "Estamos orgullosos de la gente local y llevamos su marca junto con nuestra trayectoria de calidad y autenticidad.",
     footer: {
@@ -234,7 +234,7 @@ const CONTENT: Record<Lang, {
     partners: {
       eyebrow: "Colophon",
       heading: "Partnership",
-      note: "Con Dom Bosco BBS e Skill Idiomas.",
+      note: "Con Complexo Educacional Dom Bosco Imperatriz e Skill Idiomas.",
     },
     closer: "Siamo orgogliosi della gente locale e portiamo avanti il vostro marchio con la nostra traiettoria di qualità e autenticità.",
     footer: {
@@ -417,7 +417,7 @@ function Index() {
             <div key={i} className="flex shrink-0 items-center gap-8 pr-8">
               <span>■ Santa Catarina</span><span>■ Maranhão</span><span>■ London</span>
               <span>◆ Um Gringo no Maranhão</span><span>◆ Educational Films</span>
-              <span>◆ Broadcast · Radio · Web</span><span>◆ Dom Bosco BBS</span>
+              <span>◆ Broadcast · Radio · Web</span><span>◆ Complexo Educacional Dom Bosco Imperatriz</span>
               <span>◆ Skill Idiomas</span><span>◆ BBS Group Idiomas LTDA.</span>
             </div>
           ))}
