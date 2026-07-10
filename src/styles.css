@@ -1,0 +1,92 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --color-rule: var(--rule);
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --radius: 0px;
+}
+
+:root {
+  --background: oklch(0.98 0 0);
+  --foreground: oklch(0.12 0 0);
+  --ink: oklch(0.08 0 0);
+  --paper: oklch(0.98 0 0);
+  --muted: oklch(0.94 0 0);
+  --muted-foreground: oklch(0.38 0 0);
+  --accent: oklch(0.20 0 0);
+  --border: oklch(0.12 0 0);
+  --rule: oklch(0.12 0 0);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--color-ink); color: var(--color-paper); }
+}
+
+@utility font-display { font-family: var(--font-display); }
+@utility font-mono-x { font-family: var(--font-mono); }
+
+@utility rule-t { border-top: 1px solid var(--color-rule); }
+@utility rule-b { border-bottom: 1px solid var(--color-rule); }
+@utility rule-thick { border-top: 4px solid var(--color-ink); }
+@utility rule-double { border-top: 3px double var(--color-ink); }
+
+@utility eyebrow {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+@utility drop-cap {
+  &::first-letter {
+    font-family: var(--font-display);
+    font-weight: 900;
+    float: left;
+    font-size: 5.2rem;
+    line-height: 0.85;
+    padding: 0.35rem 0.6rem 0 0;
+    color: var(--color-ink);
+  }
+}
+
+@utility marquee-track {
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@utility live-dot {
+  animation: flicker 1.6s ease-in-out infinite;
+}
