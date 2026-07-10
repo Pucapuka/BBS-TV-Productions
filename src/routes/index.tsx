@@ -23,7 +23,7 @@ type Lang = "pt" | "en" | "es" | "it";
 
 const CONTENT: Record<Lang, {
   nav: { about: string; team: string; work: string; partners: string; broadcasts: string };
-  masthead: { edition: string; date: string; location: string; issue: string };
+  masthead: { edition: string; date: string; issue: string };
   hero: { kicker: string; title: string; lede: string; standfirst: string };
   live: string;
   about: { eyebrow: string; heading: string; p1: string; p2: string; p3: string; pull: string };
@@ -36,7 +36,7 @@ const CONTENT: Record<Lang, {
 }> = {
   pt: {
     nav: { about: "Sobre", team: "Equipe", work: "Trabalhos", partners: "Parcerias", broadcasts: "Transmissões" },
-    masthead: { edition: "Edição Especial", date: "Santa Catarina · Maranhão · Londres", location: "PT / EN / ES / IT", issue: "Vol. I" },
+    masthead: { edition: "Edição Especial", date: "Santa Catarina · Maranhão · Londres", issue: "Vol. I" },
     hero: {
       kicker: "Produção Audiovisual · Jornalismo · Cultura",
       title: "Onde o rigor britânico encontra a alma brasileira.",
@@ -89,7 +89,7 @@ const CONTENT: Record<Lang, {
   },
   en: {
     nav: { about: "About", team: "Team", work: "Work", partners: "Partners", broadcasts: "Broadcasts" },
-    masthead: { edition: "Special Edition", date: "Santa Catarina · Maranhão · London", location: "PT / EN / ES / IT", issue: "Vol. I" },
+    masthead: { edition: "Special Edition", date: "Santa Catarina · Maranhão · London", issue: "Vol. I" },
     hero: {
       kicker: "Production · Journalism · Culture",
       title: "Where British rigour meets the Brazilian soul.",
@@ -142,7 +142,7 @@ const CONTENT: Record<Lang, {
   },
   es: {
     nav: { about: "Sobre", team: "Equipo", work: "Trabajos", partners: "Socios", broadcasts: "Transmisiones" },
-    masthead: { edition: "Edición Especial", date: "Santa Catarina · Maranhão · Londres", location: "PT / EN / ES / IT", issue: "Vol. I" },
+    masthead: { edition: "Edición Especial", date: "Santa Catarina · Maranhão · Londres", issue: "Vol. I" },
     hero: {
       kicker: "Producción · Periodismo · Cultura",
       title: "Donde el rigor británico se encuentra con el alma brasileña.",
@@ -195,7 +195,7 @@ const CONTENT: Record<Lang, {
   },
   it: {
     nav: { about: "Chi siamo", team: "Squadra", work: "Lavori", partners: "Partner", broadcasts: "Trasmissioni" },
-    masthead: { edition: "Edizione Speciale", date: "Santa Catarina · Maranhão · Londra", location: "PT / EN / ES / IT", issue: "Vol. I" },
+    masthead: { edition: "Edizione Speciale", date: "Santa Catarina · Maranhão · Londra", issue: "Vol. I" },
     hero: {
       kicker: "Produzione · Giornalismo · Cultura",
       title: "Dove il rigore britannico incontra l'anima brasiliana.",
@@ -314,7 +314,7 @@ function LangBar({ lang, setLang }: { lang: Lang; setLang: (l: Lang) => void }) 
             className={`flex items-center gap-1.5 px-1.5 py-1 transition-all ${
               active
                 ? "outline outline-1 outline-paper"
-                : "opacity-60 hover:opacity-100 grayscale hover:grayscale-0"
+                : "opacity-60 hover:opacity-100"
             }`}
           >
             <M.Flag />
@@ -362,7 +362,7 @@ function Index() {
           <div className="grid grid-cols-3 items-end gap-4 pt-8 pb-4 text-[11px] font-mono-x uppercase tracking-[0.18em] text-muted-foreground">
             <div>{t.masthead.edition}</div>
             <div className="text-center">{t.masthead.issue}</div>
-            <div className="text-right">{t.masthead.location}</div>
+            <div className="text-right">{lang.toUpperCase()}</div>
           </div>
           <div className="flex flex-col items-center pb-6">
             <h1 className="font-display text-center text-[14vw] leading-[0.9] tracking-[-0.04em] sm:text-[110px]">
