@@ -30,7 +30,7 @@ const CONTENT: Record<Lang, {
   team: { eyebrow: string; heading: string; role1: string; bio1: string; role2: string; bio2: string };
   work: { eyebrow: string; heading: string; items: { tag: string; title: string; body: string }[] };
   broadcasts: { eyebrow: string; heading: string; note: string; empty: string };
-  partners: { eyebrow: string; heading: string; note: string; tv: string };
+  partners: { eyebrow: string; heading: string; note: string };
   closer: string;
   footer: { address: string; company: string };
 }> = {
@@ -79,7 +79,6 @@ const CONTENT: Record<Lang, {
       eyebrow: "Expediente",
       heading: "Parcerias",
       note: "Com Dom Bosco BBS e Skill Idiomas.",
-      tv: "Espaço reservado para o logo da TV que irá ao ar",
     },
     closer: "Temos orgulho do povo local e levamos sua marca junto com a nossa trajetória de qualidade e autenticidade.",
     footer: {
@@ -132,7 +131,6 @@ const CONTENT: Record<Lang, {
       eyebrow: "Colophon",
       heading: "Partnerships",
       note: "With Dom Bosco BBS and Skill Idiomas.",
-      tv: "Reserved space for the broadcast TV logo — coming soon",
     },
     closer: "We are proud of the local people and carry your brand forward with our trajectory of quality and authenticity.",
     footer: {
@@ -185,7 +183,6 @@ const CONTENT: Record<Lang, {
       eyebrow: "Créditos",
       heading: "Alianzas",
       note: "Con Dom Bosco BBS y Skill Idiomas.",
-      tv: "Espacio reservado para el logo de la TV que saldrá al aire",
     },
     closer: "Estamos orgullosos de la gente local y llevamos su marca junto con nuestra trayectoria de calidad y autenticidad.",
     footer: {
@@ -238,7 +235,6 @@ const CONTENT: Record<Lang, {
       eyebrow: "Colophon",
       heading: "Partnership",
       note: "Con Dom Bosco BBS e Skill Idiomas.",
-      tv: "Spazio riservato al logo della TV che andrà in onda",
     },
     closer: "Siamo orgogliosi della gente locale e portiamo avanti il vostro marchio con la nostra traiettoria di qualità e autenticità.",
     footer: {
@@ -347,7 +343,7 @@ function Index() {
       <div className="rule-b bg-ink text-paper">
         <div className="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-2 text-[11px] font-mono-x uppercase tracking-[0.18em]">
           <div className="flex items-center gap-3">
-            <span className="live-dot inline-block h-2 w-2 rounded-full bg-paper" />
+            <span className="live-dot inline-block h-2 w-2 rounded-full bg-red-500" />
             <span>{t.live}</span>
             <span className="hidden sm:inline opacity-60">·</span>
             <span className="hidden sm:inline capitalize opacity-80" style={{ letterSpacing: "0.1em" }}>{today}</span>
@@ -588,12 +584,11 @@ function Index() {
               <div className="mt-3 relative flex aspect-[16/9] w-full items-center justify-center border border-ink bg-[repeating-linear-gradient(45deg,transparent_0_14px,rgba(0,0,0,0.05)_14px_15px)]">
                 <div className="absolute left-3 top-3 font-mono-x text-[10px] uppercase tracking-[0.22em] text-muted-foreground">CH · TBD</div>
                 <div className="absolute right-3 top-3 font-mono-x text-[10px] uppercase tracking-[0.22em] text-muted-foreground">16:9 · HD</div>
-                <div className="text-center">
-                  <div className="font-display text-6xl italic tracking-tight">TV · Logo</div>
-                  <div className="mt-3 font-mono-x text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
-                    {t.partners.tv}
-                  </div>
-                </div>
+                <img
+                  src="/logo.png"
+                  alt="BBS TV Productions"
+                  className="max-h-[75%] max-w-[75%] object-contain"
+                />
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between font-mono-x text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
                   <span>■ ■ ■</span><span>On Air</span>
                 </div>
