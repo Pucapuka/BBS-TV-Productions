@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import React, { useEffect, useMemo, useState } from "react";
-import dombosco1 from "@/assets/dombosco-1.jpg.asset.json";
-import dombosco2 from "@/assets/dombosco-2.jpg.asset.json";
-import skilled1 from "@/assets/skilled-1.jpg.asset.json";
-import skilled2 from "@/assets/skilled-2.jpg.asset.json";
+import dombosco1 from "@/assets/dombosco-1.jpg";
+import dombosco2 from "@/assets/dombosco-2.jpg";
+import skilled1 from "@/assets/skilled-1.jpg";
+import skilled2 from "@/assets/skilled-2.jpg";
 
 function AlternatingLogo({ a, b, alt }: { a: string; b: string; alt: string }) {
   const [on, setOn] = useState(false);
@@ -576,10 +576,10 @@ function Index() {
               <p className="mt-6 text-lg">{t.partners.note}</p>
               <div className="mt-8 grid grid-cols-2 gap-0 border border-ink">
                 <div className="border-r border-ink">
-                  <AlternatingLogo a={dombosco1.url} b={dombosco2.url} alt="Dom Bosco Imperatriz" />
+                  <AlternatingLogo a={dombosco1} b={dombosco2} alt="Dom Bosco Imperatriz" />
                 </div>
                 <div>
-                  <AlternatingLogo a={skilled1.url} b={skilled2.url} alt="Skill.Ed Learning Center" />
+                  <AlternatingLogo a={skilled1} b={skilled2} alt="Skill.Ed Learning Center" />
                 </div>
               </div>
             </div>
