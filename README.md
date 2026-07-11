@@ -217,6 +217,7 @@ Rua Heitor Liberato, 1220 · São João · Itajaí — Santa Catarina · CEP 883
 Presença em: Santa Catarina · Maranhão · Londres
 
 **Magic Soluções em TI**
+
 [Paulo Anderson Gonçalves de Lima](https://github.com/Pucapuka)
 Engenheiro de Software e Desenvolvedor Web FullStack.
 ---
