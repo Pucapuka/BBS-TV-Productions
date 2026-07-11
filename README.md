@@ -220,7 +220,8 @@ Presença em: Santa Catarina · Maranhão · Londres
 
 [Paulo Anderson Gonçalves de Lima](https://github.com/Pucapuka)
 
-Engenheiro de Software e Desenvolvedor Web FullStack.
+**Engenheiro de Software e Desenvolvedor Web FullStack.**
+
 ---
 
 ## Licença
