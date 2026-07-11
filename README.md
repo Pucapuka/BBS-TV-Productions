@@ -219,6 +219,7 @@ Presença em: Santa Catarina · Maranhão · Londres
 **Magic Soluções em TI**
 
 [Paulo Anderson Gonçalves de Lima](https://github.com/Pucapuka)
+
 Engenheiro de Software e Desenvolvedor Web FullStack.
 ---
 
